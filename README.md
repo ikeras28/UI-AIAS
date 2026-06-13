@@ -1,5 +1,9 @@
 ⚙️ UI-AIAS — Universal IT Admin AI Suite
 
+Documentacíon Tecnica:
+
+[Uploading UI-AIAS_DocumentacionTecnica_2026-06-13.pdf…]()
+
 Aplicación de escritorio multiplataforma para administración IT con IA local integrada. Sin APIs externas, sin costes, todo corre en tu máquina.
 
 📸 Vista previa
