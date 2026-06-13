@@ -1,14 +1,18 @@
 ⚙️ UI-AIAS — Universal IT Admin AI Suite
+
 Aplicación de escritorio multiplataforma para administración IT con IA local integrada. Sin APIs externas, sin costes, todo corre en tu máquina.
 
 📸 Vista previa
+
 <img width="1358" height="717" alt="image" src="https://github.com/user-attachments/assets/4414d6b4-2541-4dfe-989a-a8e7cc7c81aa" />
 <img width="1359" height="715" alt="image" src="https://github.com/user-attachments/assets/0b0c8de9-7f73-4ca6-93bb-4e0320275e89" />
 
 
 
 ✨ Funcionalidades
+
 Módulo	Descripción
+
 🏠 Dashboard	Métricas de CPU, RAM y Disco en tiempo real (actualización cada 3s)
 🔍 Análisis de Logs	Carga archivos .log/.txt y los analiza con IA forense
 🖥 Diagnóstico	Auditoría completa: procesos, red, servicios y logs del SO
@@ -17,6 +21,7 @@ Módulo	Descripción
 📋 Historial	Registro persistente en SQLite de todas las operaciones
 📄 Exportar PDF	Genera reportes profesionales con un clic
 🛠️ Stack Tecnológico
+
 Lenguaje: Python 3.12+
 
 GUI: CustomTkinter (arquitectura orientada a objetos)
@@ -32,7 +37,7 @@ Métricas: psutil
 Compatibilidad: Windows 10/11 y Linux (sin librerías propietarias)
 
 📁 Estructura del Proyecto
-text
+
 UI-AIAS/
 ├── main.py                 # Punto de entrada y GUI principal
 ├── requirements.txt        # Dependencias del proyecto
@@ -42,7 +47,9 @@ UI-AIAS/
 │   ├── database.py         # ORM ligero SQLite3
 │   └── report_gen.py       # Generación de PDFs con ReportLab
 └── reports/                # PDFs generados (creado automáticamente)
+
 🚀 Instalación y Uso
+
 1. Requisitos previos
 Python 3.12+ — marcar ✅ Add Python to PATH
 
@@ -72,15 +79,18 @@ ollama pull llama3.2
 6. Ejecutar la aplicación
 bash
 python main.py
+
 ⚙️ Configuración
 Por defecto la app se conecta a Ollama en http://localhost:11434.
 
 El selector de modelos del sidebar carga automáticamente todos los modelos que tengas instalados en Ollama. Puedes cambiar el modelo activo en cualquier momento sin reiniciar.
 
 🗄️ Base de Datos
+
 La base de datos admin_suite.db se crea automáticamente en la raíz del proyecto con tres tablas:
 
 Tabla	Contenido
+
 historial_consultas	Todas las consultas realizadas a la IA
 diagnosticos_guardados	Diagnósticos completos del sistema
 logs_analizados	Resultados de análisis forense de logs
@@ -98,6 +108,7 @@ El PDF tiene caracteres rotos (■)
 → Asegúrate de tener arial.ttf en C:\Windows\Fonts\ (Windows) o dejavu fonts en Linux.
 
 🔒 Seguridad
+
 ✅ Toda la comunicación es 100% local
 
 ✅ No se realizan llamadas a APIs externas de pago
@@ -107,4 +118,5 @@ El PDF tiene caracteres rotos (■)
 ✅ La base de datos se almacena localmente en admin_suite.db
 
 📄 Licencia
+
 Este proyecto está bajo la licencia MIT — puedes usarlo, modificarlo y distribuirlo libremente.
